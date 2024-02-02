@@ -67,7 +67,7 @@ const Task = ({ index, task }) => {
 
   // Renderizado del componente Task
   return (
-    <div ref={drag} style={{ opacity }} className={`task ${task.status}`}>
+    <div ref={drag} className={`task ${task.status}`}>
       <span className='close-btn' onClick={() => handleRemoveTask(task)}>x</span>
       {editing ?
         <div className='actions'>
