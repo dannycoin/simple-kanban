@@ -10,6 +10,8 @@ export function TaskContextProvider(props) {
   const [tasks, setTasks] = useState([]);
   const [mutate, setMutate] = useState(null);
 
+  const API_URL = "https://ominous-fortnight-g445gp4g6rgcw67x-8000.app.github.dev/api/v1/tasks/";
+
   const [columns, setColumns] = useState([
     {
       id: 1, name: 'pendiente'
@@ -32,7 +34,7 @@ export function TaskContextProvider(props) {
 
   // Función para obtener todas las tareas
   function _fetchAll(populate = false) {
-    fetch('http://localhost:8000/api/v1/tasks/')
+    fetch(API_URL)
       .then(response => response.json())
         .then(data => populate ? setTasks(data) : console.log(data));    
   }
@@ -47,7 +49,7 @@ export function TaskContextProvider(props) {
     if (mutate) {
       console.log('Mutating..', mutate)
 
-      const url = 'http://localhost:8000/api/v1/tasks/' + (mutate.action !== 'POST' ? `${mutate.parms.id}/` : '')
+      const url = API_URL + (mutate.action !== 'POST' ? `${mutate.parms.id}/` : '')
       console.log(url)
       
       fetch(url, {
