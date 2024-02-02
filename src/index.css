@@ -28,7 +28,7 @@ body {
   /* place-items: center; */
   min-width: 320px;
   min-height: 100vh;
-  background-image: url(back_00.jpg);
+  background-image: url(/back_00.jpg);
   background-size: cover;
 }
 
