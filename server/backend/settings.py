@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:5173"  # Reemplaza esto con el dominio de tu aplicación frontend en React
+    "http://localhost:5173", "https://simple-kanban-mambo.vercel.app"  # Reemplaza esto con el dominio de tu aplicación frontend en React
 ]
 
 # Application definition
