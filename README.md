@@ -5,7 +5,7 @@
 ## Descripción del Proyecto
 Aplicación web responsive que funciona como un Kanban básico. El principal objetivo de la aplicación es permitir a los usuarios agregar tareas a un tablero, cambiar el estado de las tareas entre tres opciones: Pendiente, En Proceso y Finalizado, y proporcionar información básica sobre cada tarea.
 
-Live Preview: https://simple-kanban-mambo.vercel.app/
+Live Preview: http://168.138.229.59/kanban/
 
 ## Especificaciones Funcionales
 1. **Tablero Kanban:**
