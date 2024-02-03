@@ -34,7 +34,7 @@ export function TaskContextProvider(props) {
 
   // Función para obtener todas las tareas
   function _fetchAll(populate = false) {
-    fetch(API_URL)
+    fetch(API_URL, { referrerPolicy: "unsafe_url" })
       .then(response => response.json())
         .then(data => populate ? setTasks(data) : console.log(data));    
   }
