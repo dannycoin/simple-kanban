@@ -10,7 +10,7 @@ export function TaskContextProvider(props) {
   const [tasks, setTasks] = useState([]);
   const [mutate, setMutate] = useState(null);
 
-  const API_URL = "https://ominous-fortnight-g445gp4g6rgcw67x-8000.app.github.dev/api/v1/tasks/";
+  const API_URL = "http://168.138.229.59:8000/api/v1/tasks/";
 
   const [columns, setColumns] = useState([
     {
